@@ -108,6 +108,10 @@
 			if("icon")
 				current = input("Provide icon for [arguments.len+1]\th argument") as null|icon
 				if(isnull(current)) return
+			
+			if("file")
+				current = input("Pick file:", "File") as null|file
+				if(isnull(current)) return
 
 			if("client")
 				current = input("Select client for [arguments.len+1]\th argument") as null|anything in clients
